@@ -112,7 +112,7 @@ $data = mysqli_fetch_array($runquery);
 						<div class="left">
 							<span class="subtitle">I'm</span>
 							<h3 class="name"><?=$data['titel']?></h3>
-							<p class="text">A passionate UI/UX Designer and Web Developer based In NYC, USA</p>
+							<p class="text"><?=$data['herotitel']?></p>
 							<div class="know_tm_video">
 								<div class="video_inner">
 									<div class="circle"></div>
@@ -230,11 +230,11 @@ $data = mysqli_fetch_array($runquery);
 									</li>
 									<li>
 										<h3>Address</h3>
-										<span><?=$data['Address']?></span>
+										<span><?=$data['address']?></span>
 									</li>
 									<li>
 										<h3>Nationality</h3>
-										<span><?=$data['Nationality']?></span>
+										<span><?=$data['nationality']?></span>
 									</li>
 								</ul>
 							</div>
