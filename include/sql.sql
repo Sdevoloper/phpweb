@@ -121,6 +121,7 @@ CREATE TABLE `personal_setup` (
   `id` int(11) NOT NULL,
   `profilepic` varchar(250) NOT NULL,
   `aboutpic` varchar(250) NOT NULL,
+   `aboutpic1` varchar(250) NOT NULL,
   `name` varchar(250) NOT NULL,
   `twitter` varchar(200) NOT NULL,
   `facebook` varchar(200) NOT NULL,
