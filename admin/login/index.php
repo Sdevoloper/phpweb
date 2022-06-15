@@ -14,6 +14,7 @@ if(isset($_SESSION['username'])){
     <meta name="generator" content="Jekyll v4.0.1">
     <title>Login</title>
 
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">
 
     <!-- Bootstrap core CSS -->
 <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">

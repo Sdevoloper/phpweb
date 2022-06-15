@@ -3,7 +3,7 @@ session_start();
 if(isset($_SESSION['username'])){
     header('location:../');
 }
-include("../../connection/database.php");
+include("../../include/db.php");
 if(isset($_POST['login'])){
     $email = mysqli_real_escape_string($db,$_POST['email']);
     $password = mysqli_real_escape_string($db,$_POST['password']);

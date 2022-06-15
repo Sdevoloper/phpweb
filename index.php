@@ -1,4 +1,4 @@
-﻿<?php include('./connection/database.php'); 
+﻿<?php include('./include/db.php'); 
 $query = "SELECT * FROM basic_setup,personal_setup,aboutus_setup";
 $runquery = mysqli_query($db,$query);
 if(!$db){
