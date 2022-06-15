@@ -124,10 +124,6 @@ CREATE TABLE `personal_setup` (
   `aboutpic1` varchar(250) NOT NULL,
   `name` varchar(250) NOT NULL,
   `herotitel` varchar(250) NOT NULL,
-  `birthday` varchar(250) NOT NULL,
-  `phone` varchar(250) NOT NULL,
-  `address` varchar(250) NOT NULL,
-  `nationality` varchar(250) NOT NULL,
   `twitter` varchar(200) NOT NULL,
   `facebook` varchar(200) NOT NULL,
   `instagram` varchar(200) NOT NULL,
@@ -145,8 +141,8 @@ CREATE TABLE `personal_setup` (
 -- Dumping data for table `personal_setup`
 --
 
-INSERT INTO `personal_setup` (`id`, `profilepic`,`aboutpic`,`aboutpic1`, `name`,`herotitel`,`cv`,`birthday`,`phone`,`address`,`nationality`, `twitter`, `facebook`, `instagram`, `skype`, `linkedin`, `github`, `homewallpaper`, `professions`, `location`, `mobile`, `emailid`) VALUES
-(1, 'profile-img.jpg','profile-img.jpg','profile-img.jpg', 'Alex Smith','A passionate UI/UX Designer and Web Developer based In NYC, USA','#','','', '', 'https://www.facebook.com/oyeitsmg', 'https://www.instagram.com/oyeitsmg', '@oyeitsmg', 'https://in.linkedin.com/in/whomonugiri', 'https://github.com/whomonugiri/', 'hero-bg.jpg', 'Web Developer,PHP Developer,Youtuber,Graphic Designer', 'C-537 Mahavir Enclave Part 3, Street No 45 New Delhi 110059', '+917548935467', 'alex@gmail.com');
+INSERT INTO `personal_setup` (`id`, `profilepic`,`aboutpic`,`aboutpic1`, `name`,`herotitel`,`twitter`, `facebook`, `instagram`, `skype`, `linkedin`, `github`, `homewallpaper`, `professions`, `location`, `mobile`, `emailid`) VALUES
+(1, 'profile-img.jpg','profile-img.jpg','profile-img.jpg', 'Alex Smith','A passionate UI/UX Designer and Web Developer based In NYC, USA','','https://www.facebook.com/oyeitsmg', 'https://www.instagram.com/oyeitsmg', '@oyeitsmg', 'https://in.linkedin.com/in/whomonugiri', 'https://github.com/whomonugiri/', 'hero-bg.jpg', 'Web Developer,PHP Developer,Youtuber,Graphic Designer', 'C-537 Mahavir Enclave Part 3, Street No 45 New Delhi 110059', '+917548935467', 'alex@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -155,11 +151,12 @@ CREATE TABLE `about_me` (
   `name` varchar(250) NOT NULL,
   `birthday` varchar(250) NOT NULL,
   `phone` varchar(250) NOT NULL,
+  `cv` varchar(250) NOT NULL,
   `address` varchar(250) NOT NULL,
   `nationality` varchar(250) NOT NULL,
   `aboutme` varchar(250) NOT NULL,
   `smalltext` varchar(250) NOT NULL,
-  `bigtext` varchar(250) NOT NULL,
+  `bigtext` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
